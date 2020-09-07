@@ -1,0 +1,968 @@
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: #525252;
+    overflow-x: hidden;
+}
+
+/*Page Accueil*/
+header {
+     height: 20vw;
+     background-color: #454545;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+
+ }
+
+
+header > a > h1 {
+    text-align: center;
+    margin: 0;
+
+}
+
+
+
+body > header > a > h1 > img {
+    width: 50%;
+    position: relative;
+    left: 0;
+    top: 2vw;
+}
+
+/*Menu Burger*/
+
+.menu-open,
+.menu-open body {
+    overflow: hidden;
+}
+
+/* Icone de menu hamburger */
+
+.nav-toggle {
+    position: absolute;
+    z-index: 2;
+    top: 6vw;
+    left: 5vw;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggle-bar,
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+    content: "";
+    background: white;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .4s ease;
+}
+
+.nav-toggle-bar::before {
+    top: -10px;
+}
+
+.nav-toggle-bar::after {
+    top: 10px;
+}
+
+
+/* Mise en forme menu */
+
+.menu {
+    position: fixed;
+    z-index: 1;
+    background: #393939;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    float: right;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateX(100vw);
+    transition: all .4s ease-in-out;
+}
+
+/* Qaund on clique sur l'icone de menu */
+
+.menu-open .menu {
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Eléments du menu */
+
+.menu ul {
+
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.menu li {
+    padding-left: 40vw;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.menu ul li a {
+    padding-right: 5vw;
+    position: relative;
+    right: 0;
+
+
+}
+
+body > header > nav > img:nth-child(3) {
+    width: 50%;
+    position: absolute;
+    left: 26vw;
+    top: 152vw;
+    float: bottom;
+}
+
+/* Menu burger terminer*/
+
+/*Bouton trouver un spot*/
+
+body > div > .bouton {
+    text-align: center;
+    margin-top: 30vw;
+}
+
+body > div > .bouton > a {
+    background-color: #58595C;
+    border: white solid 3px;
+    border-radius: 10vw;
+    padding: 5vw;
+    text-align: center;
+}
+
+/*Bouton terminé */
+
+
+/*api googleMaps*/
+
+.backgroundmap {
+    background: url("../img/background-map.png");
+    padding-bottom: 18vw;
+}
+
+/*api googlemaps fini */
+
+/*Les spots les plus proches */
+
+.spot-proche {
+    background-color: #3B3B3D;
+    padding-bottom: 9vw;
+}
+
+h2 {
+    padding-top: 5vw;
+    text-align: center;
+
+}
+
+body > div > div.spot-proche > img:nth-child(2) {
+    float: left;
+    padding-left: 5vw;
+    width: 50%;
+    padding-top: 12vw;
+}
+
+
+/*les étoiles*/
+.rating {
+    direction: rtl;
+    float: right;
+    padding-right: 2vw;
+}
+
+.rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 2.3em;
+    transition: color .4s;
+    width: 20px;
+}
+
+.rating a:focus,
+.rating a:focus ~ a {
+    color: #89FFE6;
+
+}
+
+/*les étoiles fini */
+
+body > div > div.spot-proche > img:nth-child(4) {
+
+    padding-top: 4vw;
+    padding-left: 8vw;
+
+}
+
+body > div > div.spot-proche > div.information > p:nth-child(1), body > div > div.spot-proche > div.information > p:nth-child(2) {
+    float: left;
+    position: relative;
+    top: -15vw;
+    left: 5vw;
+}
+
+body > div > div.spot-proche > div.information > p:nth-child(2) {
+    float: left;
+    left: 21vw;
+}
+
+
+body > div > div.spot-proche > div.voirplus > a {
+    position: relative;
+    left: 18vw;
+    top: 2vw;
+    background-color: #707070;
+    border: white solid 2px;
+    border-radius: 20px;
+    padding: 2vw;
+}
+
+/*dernier spots */
+
+.background {
+    background: url("../img/background.png");
+    padding-top: 7vw;
+    padding-bottom: 5vw;
+}
+
+body > div > div.dernierspots > div > img {
+
+    float: left;
+    padding-left: 5vw;
+    width: 50%;
+
+}
+
+body > div > div.dernierspots > h2 {
+    padding-top: 0;
+    margin-bottom: 2vw;
+}
+
+body > div > div.dernierspots > div > div.rating {
+    padding-bottom: 7vw;
+}
+
+div.voirplus > a {
+    background-color: #707070;
+    border: white solid 2px;
+    border-radius: 20px;
+    padding: 2vw 7vw;
+    margin-left: 6vw;
+
+
+
+}
+
+body > div > div.dernierspots > div > p {
+    margin-left: 72vw;
+    margin-top: 6vw;
+}
+
+body > div > div.dernierspots > div > p:nth-child(5) {
+    position: relative;
+    right: 33vw;
+}
+
+/*fin dernier spot*/
+
+/*footer*/
+ footer {
+    margin-top: 27vw;
+    background-color: #3B3B3D;
+
+
+}
+
+footer > div {
+    padding-left: 8vw;
+    display: inline-block;
+
+
+}
+
+footer > img{
+    position: relative;
+    top: -1vw;
+}
+
+
+footer > div.reseaux {
+
+    padding-top: 6vw;
+
+}
+
+footer > div > div {
+    padding-left: 1vw;
+
+}
+
+ footer > div > h3 {
+    padding-left: 5vw;
+}
+
+footer > div > div > a {
+    padding-right: 7vw;
+}
+
+.info {
+    position: relative;
+    float: right;
+    display: inline-block;
+    top: -23vw;
+
+}
+
+ footer > div.info > a {
+    margin-top: 3vw;
+    float: right;
+    width: 51%;
+}
+
+ footer > p{
+    display: inline-block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 0;
+    position: relative;
+    top: -11vw
+}
+
+footer > img:nth-child(5){
+    position: relative;
+    top: 1vw;
+}
+
+/* fin footer*/
+
+/* fin page Accueil*/
+
+
+
+/*Page trouver un spot */
+
+/*barre de recherche */
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+
+}
+
+input{
+    margin-top: 26vw !important;
+    margin-left: 5vw !important;
+    width: 45%;
+    background-color: #525252;
+    border: white solid 1px;
+    padding-top: 3vw;
+}
+
+label{
+    position: relative;
+    top: 33vw;
+    left: 7vw;
+    color: #FFFFFF;
+    opacity: 38%;
+}
+
+button{
+    background-color: #525252;
+    border: none;
+    position: relative;
+    right: 12vw;
+    z-index: 10;
+}
+/*barre de recherche fini */
+
+/*NEAR*/
+
+.near{
+    margin-bottom: 5vw;
+}
+
+body > .near > div > a{
+    background: linear-gradient(120deg, #cbafdc, #b5dde2);
+    border: none;
+    padding: 5px 4vw;
+}
+
+body > .near > div {
+    margin-top: 13vw;
+    display: inline-block;
+    padding-left: 8vw;
+}
+
+
+body > .near > p{
+    display: inline-block;
+    width: 53%;
+    padding-left: 5vw;
+   position: relative;
+    top: 1vw;
+}
+
+body > .near > img{
+    position: relative;
+    left: 33vw;
+    bottom: 2vw;
+}
+
+/*Fin Near */
+
+/* Les spots */
+
+
+body > .lesspots {
+    padding-top: 5vw;
+  height: 360vw;
+}
+
+
+body > div.lesspots > .imageS{
+    width: 49%;
+}
+
+
+
+body > div.lesspots > .imageS  >img{
+    width: 56%;
+    padding-left: 5vw;
+    float: left;
+    padding-top: 7vw;
+}
+body.profil > div:nth-child(4) > div.imageS > img{
+    width: 46% !important;
+}
+
+
+body > div.lesspots > div.rating{
+    padding-right: 5vw;
+    position: relative;
+    bottom: 5vw;
+    left: -33vw;
+
+}
+
+body > div.lesspots > div:nth-child(3){
+    bottom: 9vw;
+}
+
+body > div.lesspots > div.rating > a{
+    font-size: 6vw;
+}
+
+
+
+body > div.lesspots > div.voirplus{
+    float: right;
+    position: relative;
+    right: 3vw;
+    bottom: 11vw;
+}
+
+body > div.lesspots > div:nth-child(4){
+    position: relative;
+    left: 28vw;
+    bottom: 14vw;
+}
+
+body > div.lesspots > p:nth-child(2){
+    position: relative;
+    bottom: 0vw !important;
+}
+
+
+
+/*Fin les spots*/
+
+/*A propos*/
+
+body > div > h2{
+    padding-top: 33vw;
+    margin: 0 0 8vw;
+}
+
+body > div > p{
+    position: relative;
+    left: 2vw;
+    bottom: -4vw;
+    padding: 5vw;
+
+
+}
+
+body > div.lesspots > div:nth-child(5){
+    position: relative ;
+    bottom: 4vw ;
+}
+
+div.km > p{
+    position: relative;
+    left: 2vw;
+    top: 2vw;
+}
+
+
+
+body > div.lesspots > p:nth-child(5){
+    position: relative;
+    bottom: 7vw;
+    left: 33vw;
+}
+
+body > div.créateurs > h2{
+    padding-top: 10vw;
+}
+
+body > div.créateurs > img:nth-child(2){
+    padding-left: 6vw;
+    padding-right: 5vw;
+}
+
+body > div.créateurs > img:nth-child(3){
+    padding-right: 5vw;
+}
+
+body > div.créateurs > p{
+    display: inline-block;
+    background-color: #525252;
+    padding-left: 12vw;
+    padding-top: 0;
+    padding-right: 4vw;
+    margin-top: 3vw;
+}
+
+body > div.créateurs > p:nth-child(8){
+    padding-left: 4vw;
+    background-color: #3B3B3D;
+    padding-top: 5vw;
+    padding-bottom: 8vw;
+}
+
+
+body > div.créateurs > p:nth-child(8) > a{
+    color: white;
+    position: relative;
+    top: 3vw
+}
+
+
+body > div.créateurs > h2:nth-child(9){
+    padding-top: 19vw;
+}
+
+
+/*Page spot*/
+
+body > div > div > div.imagespot{
+    padding-top: 26vw;
+    text-align: center;
+
+}
+
+body > div > div.présentation > div.imagespot > img{
+    width: 50%;
+}
+
+body > .pagespot > div > p{
+    padding-top: 0 ;
+    margin-top: 0 ;
+    display: inline-block;
+}
+
+
+body > .pagespot > div > p{
+    padding-left: 5vw;
+    padding-top: 3vw;
+}
+
+
+
+body > .présentation > div > div.rating{
+    position: relative;
+    bottom: 15vw;
+}
+
+body > .présentation> div.rating > a{
+    font-size: 8vw;
+}
+
+
+body > div > .information > div.module{
+    width: 48%;
+    padding-left: 15vw;
+    display: inline-block;
+    padding-bottom: 15vw;
+}
+
+body > div > .information > div.module > img{
+    padding: 5vw;
+    border: dashed 1px white;
+    position: relative;
+    right: 9vw;
+
+}
+
+.localisationSpot{
+    background-color: #3B3B3D;
+    padding-bottom: 30vw;
+}
+
+body > div > .information > div.localisation > p{
+    position: relative;
+   right: 13vw;
+    top: -62vw;
+    float: right;
+}
+
+/* Commentaire */
+
+
+body > div > div.commentaire{
+    background: url("../img/commentaire.png") no-repeat center;
+    height: 65vw;
+    margin-bottom: 50vw;
+
+}
+
+body > div > div.commentaire > p{
+    position: relative;
+    bottom: 32vw;
+    right: 3vw;
+    width: 46%;
+    color: black;
+}
+
+body > div > div.commentaire > form{
+    position: relative;
+    bottom: 45vw;
+    text-align: center;
+}
+
+#ameliorer{
+    height: 40vw;
+    width: 96vw;
+}
+
+body > div > div.commentaire > a > img{
+    float: right;
+    position: relative;
+    bottom: 48vw;
+    right: 6vw;
+}
+
+body > .pagespot > div.bouton > a{
+
+    bottom: 15vw;
+    position: relative;
+}
+
+/*pageSpot fini */
+
+/* partager */
+
+body.partager > .idées > h2{
+    margin-top: 0;
+    padding-top: 37vw;
+    padding-bottom: 5vw;
+    margin-bottom: 0;
+}
+
+body.partager > .idées > p{
+    text-align: center;
+    margin-top: 0;
+    background-color: #3B3B3D;
+    left :0 !important;
+    margin-bottom: 0;
+
+}
+
+.lesreseaux{
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+    background-color: #3B3B3D;
+    padding-top: 5vw;
+
+}
+
+.lesreseaux > .logoreseaux{
+    width: 35%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 5vw;
+}
+
+.lesreseaux > .logoreseaux > a > img{
+    padding-bottom: 5vw;
+}
+
+
+.contacter{
+    width: 60%;
+    float: right;
+}
+
+body > div.contacter > h3{
+    padding-top: 5vw;
+}
+
+.contacter > form > div > input{
+    margin: 0 !important;
+    margin-bottom: 5vw !important;
+
+}
+
+.contacter > form > div > label{
+    top: -2vw;
+    left: 0;
+    opacity: 100%;
+}
+
+.contacter > form > div > textarea{
+    height: 15vw;
+}
+
+
+body.partager > div.near > div{
+    position: relative;
+    float: right;
+    margin-top: 6vw;
+}
+
+body.partager > footer {
+    margin-top: 35vw;
+
+}
+
+/*partageSpot*/
+
+body.partageSpot > footer {
+    margin-top: 35vw;
+
+}
+
+.partageSpot > .texte {
+padding-top: 26vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+body.partageSpot > .texte > p{
+    margin: 0;
+    text-align: center;
+    padding-right: 5vw;
+    left : 0;
+    padding-left: 5vw;
+    background: url("../img/background.png");
+}
+
+
+body > div.localisationSpot > h3{
+    margin-top: 18vw;
+    padding-top: 11vw;
+    padding-left: 5vw;
+    margin-bottom: 0;
+
+}
+
+body > div.localisationSpot > form > div > label{
+    opacity: 100%;
+    padding-bottom: 8vw;
+    position: relative;
+    top: 6vw !important;
+
+
+
+}
+
+.localisationSpot > form > div > input{
+    margin-top: 0 !important;
+    color: white;
+}
+
+.localisationSpot > form > div > #name{
+    position: relative;
+    left: 2vw;
+
+}
+
+
+body.partageSpot > .localisationSpot > .near{
+    margin-bottom: 5vw;
+}
+
+body.partageSpot > .localisationSpot > .near > div > a, body > div.localisationSpot > div.moduledispo > div > div > a, body > div.ajtphoto > div > div > a{
+    background: linear-gradient(120deg, #cbafdc, #b5dde2);
+    border: none;
+    padding: 10px 4vw;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+
+}
+
+body.partageSpot > .localisationSpot >  .near > div, body > div.localisationSpot > div.moduledispo > div > div{
+    position: relative;
+    bottom: 7vw;
+    right: 10vw;
+    display: inline-block;
+    padding-left: 8vw;
+    float: right;
+}
+
+
+
+body > div.localisationSpot > div.moduledispo{
+    padding-top: 10vw;
+    padding-left: 5vw;
+}
+
+body > div.localisationSpot > div.moduledispo > h3{
+    padding-bottom: 2vw;
+}
+
+body > div.localisationSpot > div.moduledispo > a:nth-child(2){
+    padding-left: 0;
+}
+
+body > div.localisationSpot > div.moduledispo > a{
+    padding-left: 5vw;
+}
+
+body > div.localisationSpot > div.moduledispo > div > div > a{
+    background: #707070 none;
+    color: white;
+}
+
+body > div.localisationSpot > div.moduledispo > div > div{
+    bottom: 0;
+    top: 10vw;
+}
+
+body > div.localisationSpot > div.Description > p{
+    margin-bottom: 0;
+}
+
+body > div.localisationSpot > div.Description > form > p{
+    margin-top: 0;
+}
+
+.Description > form > p > textarea{
+    padding-right: 5vw;
+    width: 88% !important;
+}
+
+
+.Description{
+    margin-top: 28vw;
+    padding-left: 5vw;
+
+}
+
+body > div.localisationSpot > h3:nth-child(6){
+    margin-top: 0;
+}
+
+/*Ajouter des photos */
+
+body > div.ajtphoto{
+text-align: center;
+}
+
+body > div.ajtphoto > img{
+    position: relative;
+    bottom: 16vw;
+
+}
+
+
+body > div.ajtphoto > a{
+display: inline-block;
+    position: relative;
+    bottom: 28vw;
+    color: #FFFFFF
+}
+
+/* fin partageSpot*/
+
+/* Profil */
+
+body.profil > div > img{
+    margin-top: 26vw;
+    padding-left: 5vw;
+
+}
+
+body.profil > div > h2{
+    width: 60%;
+    float: right;
+    margin-bottom: 0;
+    text-align: left;
+    position: relative;
+    bottom: 7vw;
+}
+
+body.profil > div > div.contacter{
+    position: relative;
+    bottom: 21vw;
+}
+
+body.profil > div > div > h3{
+    margin-bottom: 2vw;
+}
+
+body.profil > div.favoris > h3{
+    position: relative;
+    left: 5vw;
+    top: 15vw;
+}
+
+body > div:nth-child(4) > div.imageS > img{
+
+}
+
+
+body.profil > div.lesspots{
+    height: 35vw;
+    background-color: #3B3B3D;
+}
+
+body > .lesspots:nth-child(5){
+    position: relative;
+    bottom: 10vw;
+
+
+}
+
+body.profil > h3{
+    position: relative;
+    left: 5vw;
+    top: 15vw;
+}

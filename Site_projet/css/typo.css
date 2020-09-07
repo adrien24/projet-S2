@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "GRIFTER";
+    font-weight: bold;
+    src: url('../typographie/GRIFTER™+Bold.otf');
+}
+@font-face {
+    font-family: "Avenir";
+    src: url('../typographie/AvenirLTStd-Book.otf');
+}
+
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: calc(0.5rem + 3vw);
+}
+
+body > div > .bouton > a{
+    font-family: 'Avenir', sans-serif;
+    font-size: calc( 1.5rem + 1vw);
+    text-decoration: none;
+    color: #D988D6;
+    font-weight: bold;
+}
+
+ h2,h3 {
+    font-family: 'Avenir', sans-serif;
+    color: white;
+    font-weight: bold;
+
+}
+
+p, footer > div.info > a {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+
+}
+
+.voirplus > a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #A5FCE7;
+}
+
+body > div > div:nth-child(6) > a{
+    color: #A5FCE7;
+}
+
+body > div > footer > p{
+    font-size: calc(0.5rem + 1vw);
+}
+
+body > .near > div > a, body > div.localisationSpot > div > div > a, body > div.localisationSpot > div.moduledispo > div > div > a, body > div.ajtphoto > a, body > div.ajtphoto > div > div > a{
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 100;
+    color: #2E2E2E;
+
+}
+
+body > .near > p{
+    font-size: calc(0.5rem + 1vw);
+}
+

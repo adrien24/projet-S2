@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "GRIFTER";
+    font-weight: bold;
+    src: url('../typographie/GRIFTER™+Bold.otf');
+}
+
+
+#block1 > div > h2 {
+    color: white;
+    font-size: calc(1.5rem + 3vw);
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+
+}
+
+#block1 > div > p, #block2 > div > p, .bouton > a, .bouton1 > a {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: calc(0.5rem + 1vw);
+}
+
+#block2 > div > p{
+    color: #85CFE2;
+}
+
+#block2 > div > h2{
+    color: #85CFE2;
+    font-size: calc(1.5rem + 3vw);
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+
+}
+
+#block3 > h3, #block4 > h3, #block5 > h3{
+    font-size: calc(1.5rem + 2vw);
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    color: #85CFE2;
+}
+
+#block3 > p, #block4 > p, #block5 > p, #block6 > p{
+    font-size: calc(0.5rem + 1vw);
+    font-family: "Open Sans", sans-serif;
+}
+
+
+#block6 > h2{
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    font-size: calc(1.5rem + 3vw);
+    color: #85CFE2;
+}
+
+
+body > div.spots > h2{
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    font-size: calc(1.5rem + 3vw);
+    color: #454545;
+}
+
+#block8 > p, #block9 > p, #block10 > .background-reseau > p, #email{
+    font-size: calc(0.5rem + 1vw);
+    font-family: "Open Sans", sans-serif;
+
+}
+
+#block8 > p:nth-child(2), #block10 > .background-reseau > p{
+color: white;
+}
+
+body > div.actualité > h2, #block10 > .background-reseau > h2{
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    font-size: calc(1.5rem + 3vw);
+    color: white;
+}
+
+#block9 > h3{
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    color: #85CFE2;
+    font-size: calc(1rem + 2vw);
+
+}
+
+#block9 > form > p {
+    font-size: calc(0.5rem + 1vw);
+    font-family: "Open Sans", sans-serif;
+}
+
+.row > h2{
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    font-size: calc(1.5rem + 3vw);
+    color: #454545;
+}
+
+body > div.equipe > p{
+    font-size: calc(0.7rem + 1vw);
+    font-family: "Open Sans", sans-serif;
+    color: #454545;
+}
+
+body > div.equipe > p:nth-child(1), body > div.equipe > p:nth-child(2), body > div.equipe > p:nth-child(3){
+    font-family: GRIFTER, sans-serif;
+    font-weight: bold;
+    color: #454545;
+}
+
+#block14 > a > p, #block15 > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: calc(0.1rem + 1vw);
+    color: white;
+
+}
+
+#block14 > a{
+    text-decoration: white;
+}
+
+
+
+
+@media only screen and (max-width: 520px) {
+
+    #block1 > div > h2, #block2 > div > h2, #block3 > h3, #block4 > h3, #block5 > h3 {
+        font-size: calc(3rem + 3vw);
+    }
+
+    #block6 > h2, #block9 > h3, #block10 > div > h2, body > div:nth-child(6) > h2{
+        font-size: calc(2.5rem + 3vw);
+    }
+
+    #block1 > div > p, #block2 > div > p, .bouton > a, .bouton1 > a, #block3 > p, #block4 > p, #block5 > p, #block8 > p, #block9 > p, #block9 > div > div > a, #email, #block10 > .background-reseau > p, body > div.equipe > p:nth-child(4){
+        font-size: calc(0.5rem + 2vw);
+    }
+
+    body > div.equipe > p:nth-child(1), body > div.equipe > p:nth-child(2), body > div.equipe > p:nth-child(3){
+        font-size: calc(1.5rem + 3vw);
+    }
+
+    #block14 > a > p, #block15 > p{
+        font-size: calc(0.5rem + 1vw);
+    }
+}
+
+
+
+
